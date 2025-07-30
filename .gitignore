@@ -1,0 +1,185 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment variables
+.env*.local
+.env.production
+.env.staging
+.env.development
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Sentry
+.sentryclirc
+
+# Vercel
+.vercel
+
+# Supabase
+.supabase/
+
+# Testing
+__tests__/__snapshots__/
+
+# Bundle analyzer
+.analyze/
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Backup files
+*.backup
+*.bak
+
+# Documentation build
+docs/_build/
+
+# Python files (if using Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Local development files
+.local/
+local/
+
+# Certificate files
+*.pem
+*.key
+*.crt
+
+# Database dumps
+*.sql.gz
+*.dump
+
+# Editor workspace files
+*.code-workspace
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Stylelint
+.stylelintcache
+
+# Jest
+coverage/
+
+# Husky
+.husky/_/
+
+# Turbo
+.turbo/
+
+# Auto-generated files
+generated/
+auto-generated/
+
+# Build artifacts
+*.tgz
+*.tar.gz

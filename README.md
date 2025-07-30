@@ -1,97 +1,173 @@
-GigSync - A Gig Sharing Platform
+# GigSync - A Gig Sharing Platform
 
-GigSync is a gig-sharing platform that connects individuals and businesses with service providers for both digital and local needs. Users can create gigs, accept gigs, and start messaging seamlessly. Whether you need a digital service or local assistance, GigSync enables smooth collaboration.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GitHub Stars](https://img.shields.io/github/stars/Mahas1234/GigSync?style=social)](https://github.com/Mahas1234/GigSync/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/Mahas1234/GigSync)](https://github.com/Mahas1234/GigSync/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Mahas1234/GigSync)](https://github.com/Mahas1234/GigSync/pulls)
 
-Features
+GigSync is a modern gig-sharing platform specifically designed for students to earn money through flexible, part-time gigs. It connects students with verified employers offering hourly jobs, freelance work, and campus tasks, helping them gain valuable experience while earning extra income.
 
-Core Features:
+## 🎯 Vision
 
-Gig Creation & Acceptance - Users can post gigs and accept others' gigs based on their preferences.
+Empowering students to balance their studies with meaningful work opportunities while building their professional skills and network.
 
-Messaging System - Seamless communication between gig creators and acceptors.
+## ✨ Features
 
-User Profiles & Ratings - Profiles with reviews and ratings for credibility and trust.
+### 🔥 Core Features
 
-Secure Payments - Built-in secure payment gateway for hassle-free transactions.
+- **🎪 Gig Creation & Acceptance** - Students can browse and accept gigs that match their skills and schedule
+- **💬 Real-time Messaging** - Seamless communication between students and employers
+- **👤 Student Profiles & Ratings** - Build reputation through verified reviews and portfolio showcases
+- **💳 Secure Payments** - Safe and reliable payment processing with multiple options
+- **📍 Location-Based Matching** - Find opportunities near campus or remote work options
+- **🏷️ Smart Categories & Filters** - Advanced search by skills, time commitment, pay rate, and more
 
-Location-Based Gigs - Find gigs near you using geolocation features.
+### 🚀 Advanced Features
 
-Categories & Filters - Easily search and filter gigs based on skills, location, and urgency.
+- **⚡ Instant Booking** - Quick acceptance system for urgent gigs
+- **🎨 Student Portfolio** - Showcase previous work, skills, and achievements
+- **🤝 Skill-Based Matching** - AI-powered recommendations based on student profiles
+- **🔔 Smart Notifications** - Real-time updates on applications, messages, and payments
+- **🛡️ Admin Dashboard** - Comprehensive management for platform oversight
+- **🎁 Referral System** - Earn rewards for bringing new users to the platform
+- **⚖️ Dispute Resolution** - Fair conflict resolution system with mediation
+- **🌍 Multi-Language Support** - Accessible for international students
+- **🔌 Open APIs** - Third-party integrations for university systems
 
-Additional Features:
+## 🛠️ Tech Stack
 
-Instant Booking - Accept and start gigs immediately.
+### Frontend
+- **Framework**: React.js with Next.js 14+
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand / Redux Toolkit
+- **UI Components**: Shadcn/ui
+- **Maps**: Mapbox GL JS
+- **Real-time**: Socket.io-client
 
-Freelancer Portfolio - Users can showcase their previous work.
+### Backend
+- **Runtime**: Node.js 18+
+- **Framework**: Express.js / Fastify
+- **Database**: Supabase (PostgreSQL)
+- **Authentication**: Supabase Auth
+- **File Storage**: Supabase Storage
+- **Real-time**: Socket.io
+- **Email**: Resend / SendGrid
 
-Skill-Based Matching - Intelligent recommendations based on skills and preferences.
+### Payment & Security
+- **Payments**: Stripe, PayPal, or crypto solutions
+- **Security**: JWT, bcrypt, rate limiting
+- **Validation**: Zod / Joi
 
-In-App Notifications - Get real-time updates on gig status, messages, and payments.
+### DevOps & Hosting
+- **Hosting**: Vercel (frontend) / Railway (backend)
+- **CI/CD**: GitHub Actions
+- **Monitoring**: Sentry
+- **Analytics**: Vercel Analytics
 
-Admin Panel - Manage users, gigs, and reports efficiently.
+## 🚀 Quick Start
 
-Referral & Rewards - Earn rewards for inviting new users.
+### Prerequisites
 
-Dispute Resolution - A system to handle conflicts between users.
+- Node.js 18+ and npm/yarn
+- Git
+- Supabase account (for database and auth)
 
-Multi-Language Support - Accessible for users worldwide.
+### Development Setup
 
-API Integration - Open APIs for third-party integrations.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mahas1234/GigSync.git
+   cd GigSync
+   ```
 
-Tech Stack (Open Source Only)
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Frontend: React.js / Next.js
+3. **Environment Configuration**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Update the following variables:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+   NEXTAUTH_SECRET=your_nextauth_secret
+   NEXTAUTH_URL=http://localhost:3000
+   ```
 
-Backend: Node.js / Express.js
+4. **Database Setup**
+   ```bash
+   npm run db:setup
+   npm run db:seed
+   ```
 
-Database: Supabase (PostgreSQL)
+5. **Start Development Servers**
+   ```bash
+   # Frontend (Next.js)
+   npm run dev
+   
+   # Backend API (if separate)
+   npm run server
+   ```
 
-Authentication: Supabase Auth
+6. **Open in browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-Payment Gateway: Open-source crypto payments or UPI-based solutions
+## 📚 Documentation
 
-Hosting: Vercel / Netlify / Railway
+- [Development Guide](./docs/DEVELOPMENT.md)
+- [API Documentation](./docs/API.md)
+- [Architecture Overview](./docs/ARCHITECTURE.md)
+- [Contributing Guidelines](./CONTRIBUTING.md)
+- [Deployment Guide](./docs/DEPLOYMENT.md)
 
-Installation & Setup
+## 🤝 Contributing
 
-Clone the repository:
+We welcome contributions from developers, designers, and students! Please read our [Contributing Guidelines](./CONTRIBUTING.md) before getting started.
 
-git clone https://github.com/yourusername/gigsync.git
-cd gigsync
+### Quick Contribution Steps
 
-Install dependencies:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-npm install
+## 🐛 Issue Reporting
 
-Set up environment variables:
+Found a bug or have a feature request? Please check our [issue tracker](https://github.com/Mahas1234/GigSync/issues) and create a new issue if needed.
 
-Create a .env file and add necessary credentials for Supabase.
+## 📄 License
 
-Run the development server:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-npm run dev
+## 🌟 Support the Project
 
-Start the backend server:
+If you find GigSync helpful, please consider:
+- ⭐ Starring the repository
+- 🐛 Reporting bugs
+- 💡 Suggesting new features
+- 🤝 Contributing code
+- 📢 Sharing with other developers
 
-npm run server
+## 📞 Contact & Community
 
-Contributing
+- **Email**: [bejugammahaswi@gmail.com](mailto:bejugammahaswi@gmail.com)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/Mahas1234/GigSync/issues)
+- **Discussions**: [Join community discussions](https://github.com/Mahas1234/GigSync/discussions)
 
-We welcome contributions! Follow these steps:
+## 🙏 Acknowledgments
 
-Fork the repo.
+- Built with ❤️ for the student community
+- Inspired by the need for flexible student employment
+- Thanks to all contributors and supporters
 
-Create a new branch (feature/your-feature-name).
+---
 
-Commit your changes and push.
-
-Open a pull request.
-
-License
-
-This project is licensed under the MIT License.
-
-Contact
-
-For queries or collaboration, reach out via [bejugammahaswi@gmail.com].
+**Made with 💙 by students, for students**
 
